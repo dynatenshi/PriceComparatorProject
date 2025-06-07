@@ -2,10 +2,10 @@ let urls = ['https://zheleza.net/', 'https://www.regard.ru', 'https://www.netlab
 let htmlData = [];
 let options = {
     /*mode: 'no-cors',
-    credentials: 'include',*/
+    credentials: 'include',
     headers: {
         'Access-Control-Allow-Origin': 
-    }
+    }*/
 }
 
 async function FetchDataLoop( targets = [] ) {
