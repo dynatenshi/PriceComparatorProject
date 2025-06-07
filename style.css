@@ -1,0 +1,150 @@
+@font-face {
+    src: url(Resources/Fonts/RobotoFlex.ttf);
+    font-family: 'Roboto Flex';
+    font-weight: 400;
+}
+
+@font-face {
+    src: url(Resources/Fonts/GreatVibes.ttf);
+    font-family: 'Great Vibes';
+    font-weight: 400;
+}
+
+html {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: "Roboto Flex";
+    box-sizing: border-box;
+    margin: 0;
+    position: relative;
+    background-color: #f5f4e8;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    white-space: nowrap;
+    font-size: 30px;
+    width: 100%;
+    height: 80px;
+    background-color: #e6be3c;
+    display: flex;
+    position: fixed;
+    border-bottom: 3px #b59017 solid;
+}
+
+.header-content {
+    margin: auto;
+    /*background-color: red;*/
+    width: 90%;
+    height: 80%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.header-logo {
+    margin-left: 10%;
+    display: flex;
+    /*background-color: green;*/
+    font-weight: 1000;
+}
+
+.logo-image {
+    margin-right: 10px;
+    filter: drop-shadow(2px 2px #b49218);
+}
+
+.logo-text {
+    font-weight: 1000;
+    font-size: 50px;
+    text-shadow: 3px 3px #b49218;
+    color: #5a480c;
+}
+
+.header-nav {
+    display: flex;
+    margin: auto 0 auto 50%;
+    /*background-color: aqua;*/
+}
+
+.header-nav-span {
+    color: white;
+}
+
+.container { 
+    margin: auto;
+    padding-top: 83px;
+    width: 80%;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    font-size: 40px;
+    /*background-color: aqua;*/
+}
+
+.content-banner {
+    margin: 50px;
+    width: 100%;
+    display: flex;
+    background-image: url(Resources/Images/bg-1.jpg);
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    background-size: cover;
+    background-position: center;
+    border: 2px black solid;
+    border-radius: 50px;
+    height: 400px;
+    box-shadow: 3px 3px #666666;
+}
+
+.content-banner-text {
+    margin: auto;
+    padding: 5px;
+    font-size: 60px;
+    font-weight: 600;
+    font-family: 'Great Vibes';
+    text-shadow: 3px 3px red;
+}
+
+.popular-container {
+    width: 80%;
+    font-size: 21px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: auto;
+    /*background-color: grey;*/
+}
+
+.popular-text {
+    margin-right: 20px;
+}
+
+.popular-item {
+    transition : background-color 0.5s ease-in-out;
+    transition : color 0.35s ease-in-out;
+    background-color: #e0e0b8;
+    border-radius: 10px;
+    padding: 10px;
+    color: #998000;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.popular-item:hover {
+    color: #4d4100;
+    background-color: #d0d194;
+}
+
+.popular-item-text {
+    font-size: 20px;
+}
