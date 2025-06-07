@@ -1,18 +1,11 @@
 let urls = ['https://zheleza.net/', 'https://www.regard.ru', 'https://www.netlab.ru'];
 let htmlData = [];
-let options = {
-    /*mode: 'no-cors',
-    credentials: 'include',
-    headers: {
-        'Access-Control-Allow-Origin': 
-    }*/
-}
 
 async function FetchDataLoop( targets = [] ) {
     for (url of targets) {
         //console.log(url);
         try {
-            let promise = await fetch(url, options); 
+            let promise = await fetch(url); 
             if (!promise.ok) {
                 throw new Error("HTTP error! status: " + promise.status);
             }
