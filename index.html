@@ -3,9 +3,10 @@
     <head>
         <meta charset="UTF-8">
         <title>Price Comparator</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="Resources/style.css">
     </head>
     <body>
+        <script src="Resources/JS/json.js"></script>
         <div class="header">
             <div class="header-content">
                 <div class="header-logo">
@@ -14,53 +15,124 @@
                 </div>
                 <div class="header-nav">
                     <span class="header-nav-span"> 
-                        | <a href=''>Link</a>
-                        | <a href=''>Link 2</a> |
+                        | <a href='#top'>Верх</a>
+                        | <a href='#catalog'>Каталог</a> |
+                        | <a href='#footer'>Подвал</a> |
                     </span>
                 </div>
             </div>
         </div>
+        <a class="anchor" id="top"></a>       
         <div class="container">
             <div class="content">
                 <div class="content-banner">
                     <p class="content-banner-text">Добро пожаловать!</p>
                 </div>
                 <div class="popular-container">
-                    <p class="popular-text">Популярно</p>
+                    <p class="popular-text">Рекомендуем</p>
                     <a class="popular-item" href=''>
-                        <div class="popular-item-text">
+                        <div class="popular-item-text" id="popular-item-1">
                             Processor Amigo 2
                         </div>
                     </a>
                     <a class="popular-item" href=''>
-                        <div class="popular-item-text">
+                        <div class="popular-item-text" id="popular-item-2">
                             Monitor Aboba
                         </div>
                     </a>
                     <a class="popular-item" href=''>
-                        <div class="popular-item-text">
+                        <div class="popular-item-text" id="popular-item-3">
                             CPU Intel Core
                         </div>
                     </a>
                     <a class="popular-item" href=''>
-                        <div class="popular-item-text">
+                        <div class="popular-item-text" id="popular-item-4">
                             Alien Mother Board
                         </div>
                     </a>
                     <a class="popular-item" href=''>
-                        <div class="popular-item-text">
+                        <div class="popular-item-text" id="popular-item-5">
                             Wicked Sick Mouse
                         </div>
                     </a>
                     <a class="popular-item" href=''>
-                        <div class="popular-item-text">
+                        <div class="popular-item-text" id="popular-item-6">
                             Ultra Elite Cooler
                         </div>
                     </a>
                 </div>
+                <a class="anchor" id="catalog"></a>
+                <div class="catalogue-container">
+                    <div class="catalogue-input-container">
+                        <select name="select-category" class="item-category-selection">
+                            <option value="all" selected>Все</option>
+                            <option value="cpu">Процессоры</option>
+                            <option value="motherboard">Материнские платы</option>
+                            <option value="videocard">Кабели</option>
+                            <option value="hdd">HDD</option>
+                            <option value="ssd">SSD</option>
+                        </select>
+                        <input type="text" class="item-name-input" placeholder="Введите название:">
+                    </div>
+                    <div class="catalogue-content">
+                        <!--<p class="catalogue-empty-text">Не найдено</p>-->
+                        <!--<div class="catalogue-item">
+                            <img class="catalogue-item-image" src="Resources/Images/bg-1.jpg">
+                            <p class="catalogue-item-name">Cool Thingy</p>
+                            <a href="" class="catalogue-item-buy-button">
+                                Buy: 10 Euro
+                            </a>
+                        </div>-->
+                    </div>
+                </div>               
             </div>
         </div>
+<<<<<<< Updated upstream
         <script src="script.js"></script>
         <script src="scraping.js"></script>
+=======
+        <a class="anchor" id="footer"></a>
+        <div class="footer">
+            <div class="footer-content">
+                <p class="footer-text-disclaimer">
+                    Данный вебсайт создан в рамках проектной деятельности в Электростальском филиале Московского Политехнического института
+                </p>
+                <p class="footer-text-authors">
+                    Авторы:
+                    <ul class="footer-authors-list">
+                        <li class='footer-tooltip-author'>
+                            <span class="footer-tooltip-author-border">
+                                Ломоносов Ф.В.
+                            </span>
+                            <span class="footer-tooltip-author-text">
+                                Вёрстка на HTML и CSS                            
+                            </span>
+                        </li>
+                        <li class='footer-tooltip-author'>
+                            <span class="footer-tooltip-author-border">
+                                Аверьянов А.С.
+                            </span>
+                            <span class="footer-tooltip-author-text">
+                                Помощь в создании парсера на языке Python
+                            </span>
+                        </li>
+                        <li class='footer-tooltip-author'>
+                            <span class="footer-tooltip-author-border">
+                                Блинов М.С.
+                            </span>
+                            <span class="footer-tooltip-author-text">
+                                Программирование на JavaScript
+                            </span>
+                        </li>
+                    </ul>
+                </p>
+                <p class="footer-electrostal">
+                    Электросталь<br>
+                        2025
+                </p>
+            </div>            
+        </div>
+        <script src="Resources/JS/script.js"></script>
+>>>>>>> Stashed changes
     </body>
 </html>
